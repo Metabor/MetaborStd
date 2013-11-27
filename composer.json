@@ -1,0 +1,20 @@
+{
+    "name": "metabor/metabor-std",
+    "description": "Collection of maximal independent PHP Interfaces",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oliver Tischlinger",
+            "email": "oliver.tischlinger@metabor.de"
+        }
+    ],
+    "require": {
+    },
+     "autoload": {
+        "psr-0": {
+			"MetaborStd\\": "src/"
+        }
+    },
+    "prefer-stable":true,
+    "minimum-stability":"dev"
+}
