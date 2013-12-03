@@ -17,4 +17,10 @@ interface EventInterface extends NamedInterface, SplSubject, CallbackInterface
      * @return array
      */
     public function getInvokeArgs();
+
+    /**
+     * @return \Traversable
+     */
+    public function getObservers();
+
 }
