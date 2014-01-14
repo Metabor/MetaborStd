@@ -1,6 +1,7 @@
 {
     "name": "metabor/metabor-std",
     "description": "Collection of maximal independent PHP Interfaces",
+    "keywords": ["interfaces", "api", "standard"],
     "license": "MIT",
     "authors": [
         {
