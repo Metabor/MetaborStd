@@ -10,8 +10,13 @@
         }
     ],
     "require": {
+        "php": ">=5.3"
     },
-     "autoload": {
+    "suggest": {
+        "metabor/statemachine": "Working implementation of the statemachine interfaces",
+        "metabor/doctrine-bridge": "Integrates Doctrine to persit and define status and processes for the statemachine"
+    },
+    "autoload": {
         "psr-0": {
 			"MetaborStd\\": "src/"
         }
