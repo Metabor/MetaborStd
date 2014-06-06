@@ -1,7 +1,7 @@
 <?php
 namespace MetaborStd\Statemachine;
-use Metabor\Event\Event;
 use MetaborStd\NamedInterface;
+use Metabor\Event\Event;
 
 /**
  *
