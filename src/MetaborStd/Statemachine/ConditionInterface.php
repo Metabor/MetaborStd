@@ -1,7 +1,7 @@
 <?php
 namespace MetaborStd\Statemachine;
-use MetaborStd\NamedInterface;
 use ArrayAccess;
+use MetaborStd\NamedInterface;
 
 /**
  *

@@ -1,7 +1,7 @@
 <?php
 namespace MetaborStd\Statemachine;
-use SplSubject;
 use ArrayAccess;
+use SplSubject;
 
 /**
  *
