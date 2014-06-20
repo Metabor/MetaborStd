@@ -5,7 +5,7 @@ use MetaborStd\NamedInterface;
 /**
  *
  * @author Oliver Tischlinger
- *        
+ *
  */
 interface ProcessInterface extends NamedInterface, StateCollectionInterface
 {

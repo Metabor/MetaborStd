@@ -5,7 +5,7 @@ use Traversable;
 /**
  *
  * @author Oliver Tischlinger
- *        
+ *
  */
 interface StateCollectionInterface
 {
@@ -18,14 +18,14 @@ interface StateCollectionInterface
 
     /**
      *
-     * @param string $name            
+     * @param string $name
      * @return StateInterface
      */
     public function getState($name);
 
     /**
      *
-     * @param string $name            
+     * @param string $name
      * @return boolean
      */
     public function hasState($name);

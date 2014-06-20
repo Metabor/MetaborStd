@@ -6,7 +6,7 @@ use SplSubject;
 /**
  *
  * @author Oliver Tischlinger
- *        
+ *
  */
 interface StatemachineInterface extends SplSubject
 {
@@ -18,8 +18,8 @@ interface StatemachineInterface extends SplSubject
 
     /**
      *
-     * @param string $name        	
-     * @param ArrayAccess $context        	
+     * @param string $name
+     * @param ArrayAccess $context
      */
     public function triggerEvent($name, ArrayAccess $context = null);
 

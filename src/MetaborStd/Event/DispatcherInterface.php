@@ -6,7 +6,7 @@ use MetaborStd\CallbackInterface;
 /**
  *
  * @author Oliver Tischlinger
- *        
+ *
  */
 interface DispatcherInterface extends CallbackInterface
 {
