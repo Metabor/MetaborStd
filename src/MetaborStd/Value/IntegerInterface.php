@@ -4,7 +4,7 @@ namespace MetaborStd\Value;
 /**
  *
  * @author Oliver Tischlinger
- *        
+ *
  */
 interface IntegerInterface extends NumericInterface
 {

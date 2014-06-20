@@ -6,7 +6,7 @@ use MetaborStd\Event\EventInterface;
 /**
  *
  * @author Oliver Tischlinger
- *        
+ *
  */
 interface TransitionInterface
 {
@@ -19,9 +19,9 @@ interface TransitionInterface
 
     /**
      *
-     * @param object $subject        	
-     * @param ArrayAccess $context        	
-     * @param EventInterface $event        	
+     * @param object $subject
+     * @param ArrayAccess $context
+     * @param EventInterface $event
      * @return boolean
      */
     public function isActive($subject, ArrayAccess $context, EventInterface $event = null);

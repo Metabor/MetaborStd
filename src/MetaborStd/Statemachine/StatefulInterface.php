@@ -4,7 +4,7 @@ namespace MetaborStd\Statemachine;
 /**
  *
  * @author Oliver Tischlinger
- *        
+ *
  */
 interface StatefulInterface
 {

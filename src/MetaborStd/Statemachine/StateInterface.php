@@ -6,7 +6,7 @@ use Metabor\Event\Event;
 /**
  *
  * @author Oliver Tischlinger
- *        
+ *
  */
 interface StateInterface extends NamedInterface
 {
@@ -18,14 +18,14 @@ interface StateInterface extends NamedInterface
 
     /**
      *
-     * @param string $name        	
+     * @param string $name
      * @return Event
      */
     public function getEvent($name);
 
     /**
      *
-     * @param string $name        	
+     * @param string $name
      * @return boolean
      */
     public function hasEvent($name);

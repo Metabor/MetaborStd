@@ -8,7 +8,7 @@ use SplSubject;
 /**
  *
  * @author Oliver Tischlinger
- *        
+ *
  */
 interface EventInterface extends NamedInterface, SplSubject, CallbackInterface
 {
