@@ -18,14 +18,14 @@
     },
     "autoload": {
         "psr-0": {
-			"MetaborStd\\": "src/"
+        	"MetaborStd\\": "src/"
         }
     },
     "prefer-stable":true,
     "minimum-stability":"dev",
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "1.1.x-dev"
         }
     }
 }
