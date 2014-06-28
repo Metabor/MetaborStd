@@ -42,7 +42,7 @@ abstract class StateCollectionInterfaceTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testCanReplyIfItContainsAStateByName()
+    public function testReturnsAStateByName()
     {
         $instance = $this->createTestInstance();
         $name = $this->getOneStateNameOfTheCollection();
