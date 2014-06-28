@@ -1,6 +1,6 @@
 <?php
 namespace MetaborStd\Statemachine;
-use ArrayAccess;
+
 use MetaborStd\NamedInterface;
 
 /**
@@ -14,8 +14,8 @@ interface ConditionInterface extends NamedInterface
     /**
      *
      * @param object $subject
-     * @param ArrayAccess $context
+     * @param \ArrayAccess $context
      * @return boolean
      */
-    public function checkCondition($subject, ArrayAccess $context);
+    public function checkCondition($subject, \ArrayAccess $context);
 }
