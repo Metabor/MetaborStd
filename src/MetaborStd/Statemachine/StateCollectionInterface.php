@@ -1,6 +1,5 @@
 <?php
 namespace MetaborStd\Statemachine;
-use Traversable;
 
 /**
  *
@@ -12,7 +11,7 @@ interface StateCollectionInterface
 
     /**
      *
-     * @return Traversable
+     * @return \Traversable
      */
     public function getStates();
 
@@ -29,5 +28,4 @@ interface StateCollectionInterface
      * @return boolean
      */
     public function hasState($name);
-
 }

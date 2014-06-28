@@ -20,5 +20,4 @@ interface MonetaryInterface
      * @return number
      */
     public function getAmount();
-
 }

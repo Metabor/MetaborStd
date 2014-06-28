@@ -1,13 +1,12 @@
 <?php
 namespace MetaborStd;
-use Traversable;
 
 /**
  *
  * @author Oliver Tischlinger
  *
  */
-interface NamedCollectionInterface extends Traversable
+interface NamedCollectionInterface extends \Traversable
 {
 
     /**
@@ -35,5 +34,4 @@ interface NamedCollectionInterface extends Traversable
      * @return array
      */
     public function getNames();
-
 }

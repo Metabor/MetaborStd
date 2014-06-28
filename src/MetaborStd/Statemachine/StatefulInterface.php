@@ -19,5 +19,4 @@ interface StatefulInterface
      * @param string $stateName
      */
     public function setCurrentStateName($stateName);
-
 }

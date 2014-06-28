@@ -1,5 +1,6 @@
 <?php
 namespace MetaborStd\Statemachine;
+
 use MetaborStd\NamedInterface;
 use Metabor\Event\Event;
 
@@ -35,5 +36,4 @@ interface StateInterface extends NamedInterface
      * @return \Traversable
      */
     public function getTransitions();
-
 }

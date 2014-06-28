@@ -1,6 +1,6 @@
 <?php
 namespace MetaborStd\Statemachine;
-use ArrayAccess;
+
 use MetaborStd\Event\EventInterface;
 
 /**
@@ -20,11 +20,11 @@ interface TransitionInterface
     /**
      *
      * @param object $subject
-     * @param ArrayAccess $context
+     * @param \ArrayAccess $context
      * @param EventInterface $event
      * @return boolean
      */
-    public function isActive($subject, ArrayAccess $context, EventInterface $event = null);
+    public function isActive($subject, \ArrayAccess $context, EventInterface $event = null);
 
     /**
      *
@@ -37,5 +37,4 @@ interface TransitionInterface
      * @return <string,null>
      */
     public function getConditionName();
-
 }

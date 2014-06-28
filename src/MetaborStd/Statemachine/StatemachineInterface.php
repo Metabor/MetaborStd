@@ -1,14 +1,12 @@
 <?php
 namespace MetaborStd\Statemachine;
-use ArrayAccess;
-use SplSubject;
 
 /**
  *
  * @author Oliver Tischlinger
  *
  */
-interface StatemachineInterface extends SplSubject
+interface StatemachineInterface extends \SplSubject
 {
     /**
      *
@@ -19,9 +17,9 @@ interface StatemachineInterface extends SplSubject
     /**
      *
      * @param string $name
-     * @param ArrayAccess $context
+     * @param \ArrayAccess $context
      */
-    public function triggerEvent($name, ArrayAccess $context = null);
+    public function triggerEvent($name, \ArrayAccess $context = null);
 
     /**
      */
