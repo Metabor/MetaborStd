@@ -3,14 +3,13 @@ namespace MetaborStd\Event;
 
 use MetaborStd\CallbackInterface;
 use MetaborStd\NamedInterface;
-use SplSubject;
 
 /**
  *
  * @author Oliver Tischlinger
  *
  */
-interface EventInterface extends NamedInterface, SplSubject, CallbackInterface
+interface EventInterface extends NamedInterface, \SplSubject, CallbackInterface
 {
     /**
      *
@@ -22,5 +21,4 @@ interface EventInterface extends NamedInterface, SplSubject, CallbackInterface
      * @return \Traversable
      */
     public function getObservers();
-
 }

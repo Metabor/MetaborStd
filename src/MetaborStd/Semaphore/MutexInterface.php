@@ -1,5 +1,6 @@
 <?php
 namespace MetaborStd\Semaphore;
+
 /**
  * @author Oliver Tischlinger
  *

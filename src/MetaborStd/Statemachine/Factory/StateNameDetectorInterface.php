@@ -1,5 +1,6 @@
 <?php
 namespace MetaborStd\Statemachine\Factory;
+
 /**
  * @author otischlinger
  *
