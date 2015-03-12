@@ -16,8 +16,7 @@
         "phpunit/phpunit": "~4.1"
     },
     "suggest": {
-        "metabor/statemachine": "Working implementation of the statemachine interfaces",
-        "metabor/statemachine-doctrine-bridge": "Integrates Doctrine to persit and define status and processes for the statemachine"
+        "metabor/statemachine": "Working implementation of the statemachine interfaces"
     },
     "autoload": {
         "psr-0": {
@@ -26,7 +25,6 @@
     },
     "prefer-stable":true,
     "minimum-stability":"dev",
-    "notification-url": "https://packagist.org/downloads/",
     "extra": {
         "branch-alias": {
             "dev-master": "1.1.x-dev"
