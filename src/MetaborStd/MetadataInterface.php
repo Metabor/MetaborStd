@@ -2,9 +2,7 @@
 namespace MetaborStd;
 
 /**
- *
  * @author Oliver Tischlinger
- *
  */
 interface MetadataInterface
 {

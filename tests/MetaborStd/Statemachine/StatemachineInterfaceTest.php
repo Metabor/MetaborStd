@@ -1,11 +1,10 @@
 <?php
 namespace MetaborStd\Statemachine;
+
 use MetaborStd\NamedInterface;
 
 /**
- * 
  * @author Oliver Tischlinger
- *
  */
 abstract class StatemachineInterfaceTest extends \PHPUnit_Framework_TestCase
 {
@@ -15,7 +14,7 @@ abstract class StatemachineInterfaceTest extends \PHPUnit_Framework_TestCase
     abstract protected function createTestInstance();
 
     /**
-     * 
+     *
      */
     public function testProvidesCurrentState()
     {
@@ -57,7 +56,7 @@ abstract class StatemachineInterfaceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * 
+     *
      */
     public function testHandleEventsThatAreTriggered()
     {
@@ -81,7 +80,7 @@ abstract class StatemachineInterfaceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * 
+     *
      */
     public function testChecksIfConditionsAreTrue()
     {

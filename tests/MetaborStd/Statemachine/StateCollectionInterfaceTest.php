@@ -1,9 +1,8 @@
 <?php
 namespace MetaborStd\Statemachine;
+
 /**
- * 
  * @author Oliver Tischlinger
- *
  */
 abstract class StateCollectionInterfaceTest extends \PHPUnit_Framework_TestCase
 {
@@ -18,7 +17,7 @@ abstract class StateCollectionInterfaceTest extends \PHPUnit_Framework_TestCase
     abstract protected function getOneStateNameOfTheCollection();
 
     /**
-     * 
+     *
      */
     public function testContainsStates()
     {

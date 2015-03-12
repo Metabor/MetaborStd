@@ -2,9 +2,7 @@
 namespace MetaborStd\Statemachine\Factory;
 
 /**
- * 
  * @author Oliver Tischlinger
- *
  */
 abstract class FactoryInterfaceTest extends \PHPUnit_Framework_TestCase
 {
@@ -14,12 +12,12 @@ abstract class FactoryInterfaceTest extends \PHPUnit_Framework_TestCase
     abstract protected function createTestInstance();
 
     /**
-     * 
+     *
      */
     abstract protected function getSubject();
 
     /**
-     * 
+     *
      */
     public function testCreatesAStatemachineInstanceForTheSubject()
     {

@@ -2,13 +2,10 @@
 namespace MetaborStd;
 
 /**
- *
  * @author Oliver Tischlinger
- *
  */
 interface ArrayConvertableInterface
 {
-
     /**
      * @return array
      */

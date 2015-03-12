@@ -3,11 +3,9 @@ namespace MetaborStd\Semaphore;
 
 /**
  * @author Oliver Tischlinger
- *
  */
 interface MutexInterface
 {
-
     /**
      * @return bool
      */
