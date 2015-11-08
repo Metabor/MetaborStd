@@ -1,4 +1,5 @@
 <?php
+
 namespace MetaborStd\Statemachine;
 
 /**
@@ -21,7 +22,7 @@ interface StateCollectionInterface
     /**
      * @param string $name
      *
-     * @return boolean
+     * @return bool
      */
     public function hasState($name);
 }

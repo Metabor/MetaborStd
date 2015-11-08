@@ -1,4 +1,5 @@
 <?php
+
 namespace MetaborStd\Event;
 
 use MetaborStd\CallbackInterface;
@@ -16,7 +17,7 @@ interface DispatcherInterface extends CallbackInterface
     public function dispatch(EventInterface $event, array $arguments = array(), CallbackInterface $onReadyCallback = null);
 
     /**
-     * @return boolean
+     * @return bool
      */
     public function isReady();
 }

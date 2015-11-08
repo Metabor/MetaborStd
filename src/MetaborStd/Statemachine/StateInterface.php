@@ -1,8 +1,9 @@
 <?php
+
 namespace MetaborStd\Statemachine;
 
-use MetaborStd\NamedInterface;
 use MetaborStd\Event\EventInterface;
+use MetaborStd\NamedInterface;
 
 /**
  * @author Oliver Tischlinger
@@ -10,7 +11,7 @@ use MetaborStd\Event\EventInterface;
 interface StateInterface extends NamedInterface
 {
     /**
-     * @return \Traversable | array
+     * @return \Traversable|array
      */
     public function getEventNames();
 
@@ -24,7 +25,7 @@ interface StateInterface extends NamedInterface
     /**
      * @param string $name
      *
-     * @return boolean
+     * @return bool
      */
     public function hasEvent($name);
 

@@ -1,4 +1,5 @@
 <?php
+
 namespace MetaborStd\Statemachine;
 
 use MetaborStd\NamedInterface;

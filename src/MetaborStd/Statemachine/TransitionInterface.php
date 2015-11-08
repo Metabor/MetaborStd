@@ -1,4 +1,5 @@
 <?php
+
 namespace MetaborStd\Statemachine;
 
 use MetaborStd\Event\EventInterface;
@@ -18,7 +19,7 @@ interface TransitionInterface
      * @param \ArrayAccess   $context
      * @param EventInterface $event
      *
-     * @return boolean
+     * @return bool
      */
     public function isActive($subject, \ArrayAccess $context, EventInterface $event = null);
 

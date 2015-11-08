@@ -1,4 +1,5 @@
 <?php
+
 namespace MetaborStd\Value;
 
 /**
@@ -7,7 +8,7 @@ namespace MetaborStd\Value;
 interface ScalarInterface extends MixedInterface
 {
     /**
-     * @return boolean|double|integer|null|string
+     * @return bool|float|int|null|string
      */
     public function getValue();
 }

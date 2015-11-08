@@ -1,4 +1,5 @@
 <?php
+
 namespace MetaborStd\Value;
 
 /**
@@ -7,7 +8,7 @@ namespace MetaborStd\Value;
 interface NumericInterface extends ScalarInterface
 {
     /**
-     * @return integer|float
+     * @return int|float
      */
     public function getValue();
 }

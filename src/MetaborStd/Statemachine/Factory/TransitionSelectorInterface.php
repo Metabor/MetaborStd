@@ -1,4 +1,5 @@
 <?php
+
 namespace MetaborStd\Statemachine\Factory;
 
 /**
@@ -9,7 +10,7 @@ interface TransitionSelectorInterface
     /**
      * @param \Traversable $transitions
      *
-     * @return \MetaborStd\Statemachine\TransitionInterface | null
+     * @return \MetaborStd\Statemachine\TransitionInterface|null
      */
     public function selectTransition(\Traversable $transitions);
 }

@@ -1,4 +1,5 @@
 <?php
+
 namespace MetaborStd\Rule;
 
 use MetaborStd\Value\BooleanInterface;

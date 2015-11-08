@@ -1,4 +1,5 @@
 <?php
+
 namespace MetaborStd\Statemachine;
 
 use MetaborStd\NamedInterface;
@@ -12,7 +13,7 @@ interface ConditionInterface extends NamedInterface
      * @param object       $subject
      * @param \ArrayAccess $context
      *
-     * @return boolean
+     * @return bool
      */
     public function checkCondition($subject, \ArrayAccess $context);
 }

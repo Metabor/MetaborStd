@@ -1,4 +1,5 @@
 <?php
+
 namespace MetaborStd\Event;
 
 use MetaborStd\CallbackInterface;

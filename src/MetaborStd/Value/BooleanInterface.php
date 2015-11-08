@@ -1,4 +1,5 @@
 <?php
+
 namespace MetaborStd\Value;
 
 /**
@@ -7,7 +8,7 @@ namespace MetaborStd\Value;
 interface BooleanInterface extends ScalarInterface
 {
     /**
-     * @return boolean
+     * @return bool
      */
     public function getValue();
 }
