@@ -15,14 +15,14 @@ interface LockAdapterInterface
     public function acquireLock($resourceName);
 
     /**
-     * @param $resourceName
+     * @param string $resourceName
      *
      * @return bool
      */
     public function releaseLock($resourceName);
 
     /**
-     * @param $resourceName
+     * @param string $resourceName
      *
      * @return bool
      */
