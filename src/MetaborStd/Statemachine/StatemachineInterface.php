@@ -14,13 +14,14 @@ interface StatemachineInterface extends \SplSubject
 
     /**
      * @param string       $name
-     * @param \ArrayAccess $context
+     * @param \ArrayAccess|null $context
      */
     public function triggerEvent($name, \ArrayAccess $context = null);
 
     /**
+     * @param \ArrayAccess|null $context
      */
-    public function checkTransitions();
+    public function checkTransitions(\ArrayAccess $context = null);
 
     /**
      * returns the owning object.
