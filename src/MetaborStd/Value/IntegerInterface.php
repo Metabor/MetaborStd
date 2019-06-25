@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd\Value;
 
 /**
@@ -10,5 +12,5 @@ interface IntegerInterface extends NumericInterface
     /**
      * @return int
      */
-    public function getValue();
+    public function getValue(): int;
 }

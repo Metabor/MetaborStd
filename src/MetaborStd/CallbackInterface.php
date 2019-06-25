@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd;
 
 /**
@@ -8,6 +10,7 @@ namespace MetaborStd;
 interface CallbackInterface
 {
     /**
+     * @return mixed
      */
     public function __invoke();
 }

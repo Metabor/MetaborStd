@@ -1,6 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd\Statemachine;
+
+use DateTime;
 
 /**
  * @author Oliver Tischlinger
@@ -8,7 +12,7 @@ namespace MetaborStd\Statemachine;
 interface LastStateHasChangedDateInterface
 {
     /**
-     * @return \DateTime
+     * @return DateTime
      */
-    public function getLastStateHasChangedDate();
+    public function getLastStateHasChangedDate(): DateTime;
 }

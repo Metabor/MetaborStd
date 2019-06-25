@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd;
 
 /**
@@ -10,5 +12,5 @@ interface ArrayConvertableInterface
     /**
      * @return array
      */
-    public function toArray();
+    public function toArray(): array;
 }

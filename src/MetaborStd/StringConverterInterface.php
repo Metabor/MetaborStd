@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd;
 
 /**
@@ -8,9 +10,9 @@ namespace MetaborStd;
 interface StringConverterInterface
 {
     /**
-     * @param mixed $source
+     * @param object $source
      *
      * @return string
      */
-    public function convertToString($source);
+    public function convertToString(object $source): string;
 }

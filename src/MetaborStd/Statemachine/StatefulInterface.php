@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd\Statemachine;
 
 /**
@@ -10,10 +12,10 @@ interface StatefulInterface
     /**
      * @return string
      */
-    public function getCurrentStateName();
+    public function getCurrentStateName(): string;
 
     /**
      * @param string $stateName
      */
-    public function setCurrentStateName($stateName);
+    public function setCurrentStateName(string $stateName);
 }

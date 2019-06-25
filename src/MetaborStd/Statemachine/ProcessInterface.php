@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd\Statemachine;
 
 use MetaborStd\NamedInterface;
@@ -10,7 +12,7 @@ use MetaborStd\NamedInterface;
 interface ProcessInterface extends NamedInterface, StateCollectionInterface
 {
     /**
-     * @return \MetaborStd\Statemachine\StateInterface
+     * @return StateInterface
      */
-    public function getInitialState();
+    public function getInitialState(): StateInterface;
 }

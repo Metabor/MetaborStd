@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd;
 
 /**
@@ -10,5 +12,5 @@ interface NamedInterface
     /**
      * @return string
      */
-    public function getName();
+    public function getName(): string;
 }

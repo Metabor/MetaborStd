@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd\Statemachine\Factory;
 
 /**
@@ -12,5 +14,5 @@ interface StateNameDetectorInterface
      *
      * @return string
      */
-    public function detectCurrentStateName($subject);
+    public function detectCurrentStateName(object $subject): string;
 }

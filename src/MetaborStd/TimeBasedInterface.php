@@ -1,6 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd;
+
+use DateTime;
 
 /**
  * @author Oliver Tischlinger
@@ -8,7 +12,7 @@ namespace MetaborStd;
 interface TimeBasedInterface
 {
     /**
-     * @return \DateTime
+     * @return DateTime
      */
-    public function getDate();
+    public function getDate(): DateTime;
 }

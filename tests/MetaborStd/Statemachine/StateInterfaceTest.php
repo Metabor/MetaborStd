@@ -1,8 +1,10 @@
 <?php
 
-namespace MetaborStd\Statemachine;
+declare(strict_types=1);
 
-use MetaborStd\NamedInterfaceTest;
+namespace MetaborStd\Tests\Statemachine;
+
+use MetaborStd\Tests\NamedInterfaceTest;
 
 /**
  * @author Oliver Tischlinger
