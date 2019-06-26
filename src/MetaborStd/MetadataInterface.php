@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd;
 
 /**
@@ -10,5 +12,5 @@ interface MetadataInterface
     /**
      * @return array
      */
-    public function getMetadata();
+    public function getMetadata(): array;
 }

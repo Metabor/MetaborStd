@@ -1,7 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd\Statemachine;
 
+use ArrayAccess;
 use MetaborStd\Event\EventInterface;
 
 /**
@@ -10,26 +13,26 @@ use MetaborStd\Event\EventInterface;
 interface TransitionInterface
 {
     /**
-     * @return \MetaborStd\Statemachine\StateInterface
+     * @return StateInterface
      */
-    public function getTargetState();
+    public function getTargetState(): StateInterface;
 
     /**
-     * @param object         $subject
-     * @param \ArrayAccess   $context
-     * @param EventInterface $event
+     * @param object              $subject
+     * @param ArrayAccess         $context
+     * @param EventInterface|null $event
      *
      * @return bool
      */
-    public function isActive($subject, \ArrayAccess $context, EventInterface $event = null);
+    public function isActive(object $subject, ArrayAccess $context, ?EventInterface $event = null): bool;
 
     /**
-     * @return <string,null>
+     * @return string|null
      */
-    public function getEventName();
+    public function getEventName(): ?string;
 
     /**
-     * @return <string,null>
+     * @return string|null
      */
-    public function getConditionName();
+    public function getConditionName(): ?string;
 }

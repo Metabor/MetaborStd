@@ -1,7 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd\Statemachine;
 
+use ArrayAccess;
 use MetaborStd\NamedInterface;
 
 /**
@@ -10,10 +13,10 @@ use MetaborStd\NamedInterface;
 interface ConditionInterface extends NamedInterface
 {
     /**
-     * @param object       $subject
-     * @param \ArrayAccess $context
+     * @param object      $subject
+     * @param ArrayAccess $context
      *
      * @return bool
      */
-    public function checkCondition($subject, \ArrayAccess $context);
+    public function checkCondition(object $subject, ArrayAccess $context): bool;
 }

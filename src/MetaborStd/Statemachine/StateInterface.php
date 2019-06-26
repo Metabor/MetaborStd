@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd\Statemachine;
 
 use MetaborStd\Event\EventInterface;
@@ -11,26 +13,26 @@ use MetaborStd\NamedInterface;
 interface StateInterface extends NamedInterface
 {
     /**
-     * @return \Traversable|array
+     * @return iterable
      */
-    public function getEventNames();
+    public function getEventNames(): iterable;
 
     /**
      * @param string $name
      *
      * @return EventInterface
      */
-    public function getEvent($name);
+    public function getEvent(string $name): EventInterface;
 
     /**
      * @param string $name
      *
      * @return bool
      */
-    public function hasEvent($name);
+    public function hasEvent(string $name): bool;
 
     /**
-     * @return \Traversable
+     * @return iterable
      */
-    public function getTransitions();
+    public function getTransitions(): iterable;
 }

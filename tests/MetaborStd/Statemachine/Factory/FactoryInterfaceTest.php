@@ -1,30 +1,33 @@
 <?php
 
-namespace MetaborStd\Statemachine\Factory;
+declare(strict_types=1);
+
+namespace MetaborStd\Tests\Statemachine\Factory;
+
+use MetaborStd\Statemachine\Factory\FactoryInterface;
+use MetaborStd\Statemachine\StatemachineInterface;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @author Oliver Tischlinger
  */
-abstract class FactoryInterfaceTest extends \PHPUnit_Framework_TestCase
+abstract class FactoryInterfaceTest extends TestCase
 {
     /**
-     * @return \MetaborStd\Statemachine\Factory\FactoryInterface
+     * @return FactoryInterface
      */
-    abstract protected function createTestInstance();
+    abstract protected function createTestInstance(): FactoryInterface;
 
     /**
-     *
+     * @return object
      */
-    abstract protected function getSubject();
+    abstract protected function getSubject(): object;
 
-    /**
-     *
-     */
-    public function testCreatesAStatemachineInstanceForTheSubject()
+    public function testCreatesAStatemachineInstanceForTheSubject(): void
     {
         $instance = $this->createTestInstance();
         $subject = $this->getSubject();
         $statemachine = $instance->createStatemachine($subject);
-        $this->assertInstanceOf('\MetaborStd\Statemachine\StatemachineInterface', $statemachine);
+        $this->assertInstanceOf(StatemachineInterface::class, $statemachine);
     }
 }

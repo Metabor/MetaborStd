@@ -1,6 +1,8 @@
 <?php
 
-namespace MetaborStd\Statemachine;
+declare(strict_types=1);
+
+namespace MetaborStd\Tests\Statemachine;
 
 /**
  * @author Oliver Tischlinger

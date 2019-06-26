@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd\Semaphore;
 
 /**
@@ -12,19 +14,19 @@ interface LockAdapterInterface
      *
      * @return bool
      */
-    public function acquireLock($resourceName);
+    public function acquireLock(string $resourceName): bool;
 
     /**
      * @param string $resourceName
      *
      * @return bool
      */
-    public function releaseLock($resourceName);
+    public function releaseLock(string $resourceName): bool;
 
     /**
      * @param string $resourceName
      *
      * @return bool
      */
-    public function isLocked($resourceName);
+    public function isLocked(string $resourceName): bool;
 }

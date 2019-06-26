@@ -1,8 +1,10 @@
 <?php
 
-namespace MetaborStd\Event;
+declare(strict_types=1);
 
-use MetaborStd\NamedInterfaceTest;
+namespace MetaborStd\Tests\Event;
+
+use MetaborStd\Tests\NamedInterfaceTest;
 
 /**
  * @author Oliver Tischlinger

@@ -1,0 +1,7 @@
+parameters:
+  php_version_features: '7.2'
+services:
+  Rector\TypeDeclaration\Rector\FunctionLike\ReturnTypeDeclarationRector: ~
+  Rector\Php\Rector\Property\CompleteVarDocTypePropertyRector: ~
+  Rector\CodingStyle\Rector\Namespace_\ImportFullyQualifiedNamesRector: ~
+  Rector\TypeDeclaration\Rector\FunctionLike\ParamTypeDeclarationRector: ~

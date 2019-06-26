@@ -1,6 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd\Statemachine\Factory;
+
+use MetaborStd\Statemachine\TransitionInterface;
 
 /**
  * @author otischlinger
@@ -8,9 +12,9 @@ namespace MetaborStd\Statemachine\Factory;
 interface TransitionSelectorInterface
 {
     /**
-     * @param \Traversable $transitions
+     * @param iterable $transitions
      *
-     * @return \MetaborStd\Statemachine\TransitionInterface|null
+     * @return TransitionInterface|null
      */
-    public function selectTransition(\Traversable $transitions);
+    public function selectTransition(iterable $transitions): ?TransitionInterface;
 }

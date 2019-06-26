@@ -1,37 +1,37 @@
 <?php
 
-namespace MetaborStd\Statemachine;
+declare(strict_types=1);
+
+namespace MetaborStd\Tests\Statemachine;
+
+use MetaborStd\Statemachine\StateCollectionInterface;
+use MetaborStd\Statemachine\StateInterface;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @author Oliver Tischlinger
  */
-abstract class StateCollectionInterfaceTest extends \PHPUnit_Framework_TestCase
+abstract class StateCollectionInterfaceTest extends TestCase
 {
     /**
-     * @return \MetaborStd\Statemachine\StateCollectionInterface
+     * @return StateCollectionInterface
      */
-    abstract protected function createTestInstance();
+    abstract protected function createTestInstance(): StateCollectionInterface;
 
     /**
      * @return string
      */
-    abstract protected function getOneStateNameOfTheCollection();
+    abstract protected function getOneStateNameOfTheCollection(): string;
 
-    /**
-     *
-     */
-    public function testContainsStates()
+    public function testContainsStates(): void
     {
         $instance = $this->createTestInstance();
         $states = $instance->getStates();
-        $this->assertInstanceOf('\Traversable', $states);
-        $this->assertContainsOnlyInstancesOf('\MetaborStd\Statemachine\StateInterface', $states);
+        $this->assertIsIterable($states);
+        $this->assertContainsOnlyInstancesOf(StateInterface::class, $states);
     }
 
-    /**
-     *
-     */
-    public function testCanReplyIfItContainsAStateByName()
+    public function testCanReplyIfItContainsAStateByName(): void
     {
         $instance = $this->createTestInstance();
         $name = $this->getOneStateNameOfTheCollection();
@@ -39,14 +39,11 @@ abstract class StateCollectionInterfaceTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($hasState);
     }
 
-    /**
-     *
-     */
-    public function testReturnsAStateByName()
+    public function testReturnsAStateByName(): void
     {
         $instance = $this->createTestInstance();
         $name = $this->getOneStateNameOfTheCollection();
         $state = $instance->getState($name);
-        $this->assertInstanceOf('\MetaborStd\Statemachine\StateInterface', $state);
+        $this->assertInstanceOf(StateInterface::class, $state);
     }
 }

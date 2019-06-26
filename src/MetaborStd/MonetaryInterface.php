@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd;
 
 /**
@@ -10,10 +12,10 @@ interface MonetaryInterface
     /**
      * @return string
      */
-    public function getCurrency();
+    public function getCurrency(): string;
 
     /**
-     * @return number
+     * @return float
      */
-    public function getAmount();
+    public function getAmount(): float;
 }

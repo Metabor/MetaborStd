@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd;
 
 /**
@@ -8,7 +10,7 @@ namespace MetaborStd;
 interface MergeableInterface
 {
     /**
-     * @param mixed $source
+     * @param object $source
      */
-    public function merge($source);
+    public function merge(object $source): void;
 }

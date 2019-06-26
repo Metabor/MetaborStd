@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace MetaborStd\Semaphore;
 
 /**
@@ -8,8 +10,9 @@ namespace MetaborStd\Semaphore;
 interface MutexFactoryInterface
 {
     /**
-     * @param $subject
+     * @param object $subject
+     *
      * @return MutexInterface
      */
-    public function createMutex($subject);
+    public function createMutex(object $subject): MutexInterface;
 }

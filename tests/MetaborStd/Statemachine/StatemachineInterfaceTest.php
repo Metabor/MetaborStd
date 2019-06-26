@@ -1,48 +1,48 @@
 <?php
 
-namespace MetaborStd\Statemachine;
+declare(strict_types=1);
+
+namespace MetaborStd\Tests\Statemachine;
 
 use MetaborStd\NamedInterface;
+use MetaborStd\Statemachine\StateInterface;
+use MetaborStd\Statemachine\StatemachineInterface;
+use MetaborStd\Statemachine\TransitionInterface;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @author Oliver Tischlinger
  */
-abstract class StatemachineInterfaceTest extends \PHPUnit_Framework_TestCase
+abstract class StatemachineInterfaceTest extends TestCase
 {
     /**
-     * @return \MetaborStd\Statemachine\StatemachineInterface
+     * @return StatemachineInterface
      */
-    abstract protected function createTestInstance();
+    abstract protected function createTestInstance(): StatemachineInterface;
 
-    /**
-     *
-     */
-    public function testProvidesCurrentState()
+    public function testProvidesCurrentState(): void
     {
         $instance = $this->createTestInstance();
         $currentState = $instance->getCurrentState();
-        $this->assertInstanceOf('\MetaborStd\Statemachine\StateInterface', $currentState);
+        $this->assertInstanceOf(StateInterface::class, $currentState);
     }
 
-    /**
-     *
-     */
-    public function testProvidesStatefulSubject()
+    public function testProvidesStatefulSubject(): void
     {
         $instance = $this->createTestInstance();
         $subject = $instance->getSubject();
-        $this->assertInternalType('object', $subject);
+        $this->assertIsObject($subject);
     }
 
     /**
-     * @return \MetaborStd\Statemachine\TransitionInterface
+     * @return TransitionInterface
      */
-    abstract protected function getTransitionForTriggerTest();
+    abstract protected function getTransitionForTriggerTest(): TransitionInterface;
 
     /**
-     * @return \MetaborStd\Statemachine\StatemachineInterface
+     * @return StatemachineInterface
      */
-    protected function getTestInstanceForTriggerTest()
+    protected function getTestInstanceForTriggerTest(): StatemachineInterface
     {
         return $this->createTestInstance();
     }
@@ -51,15 +51,12 @@ abstract class StatemachineInterfaceTest extends \PHPUnit_Framework_TestCase
      * @param NamedInterface $expected
      * @param NamedInterface $actual
      */
-    protected function assertNameEquals(NamedInterface $expected, NamedInterface $actual)
+    protected function assertNameEquals(NamedInterface $expected, NamedInterface $actual): void
     {
         $this->assertEquals($expected->getName(), $actual->getName());
     }
 
-    /**
-     *
-     */
-    public function testHandleEventsThatAreTriggered()
+    public function testHandleEventsThatAreTriggered(): void
     {
         $instance = $this->getTestInstanceForTriggerTest();
         $testTransition = $this->getTransitionForTriggerTest();
@@ -68,22 +65,19 @@ abstract class StatemachineInterfaceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @return \MetaborStd\Statemachine\TransitionInterface
+     * @return TransitionInterface
      */
-    abstract protected function getTransitionForCheckTest();
+    abstract protected function getTransitionForCheckTest(): TransitionInterface;
 
     /**
-     * @return \MetaborStd\Statemachine\StatemachineInterface
+     * @return StatemachineInterface
      */
-    protected function getTestInstanceForCheckTest()
+    protected function getTestInstanceForCheckTest(): StatemachineInterface
     {
         return $this->createTestInstance();
     }
 
-    /**
-     *
-     */
-    public function testChecksIfConditionsAreTrue()
+    public function testChecksIfConditionsAreTrue(): void
     {
         $instance = $this->getTestInstanceForCheckTest();
         $testTransition = $this->getTransitionForCheckTest();
