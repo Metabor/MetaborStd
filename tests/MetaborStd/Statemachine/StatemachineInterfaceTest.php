@@ -7,7 +7,7 @@ use MetaborStd\NamedInterface;
 /**
  * @author Oliver Tischlinger
  */
-abstract class StatemachineInterfaceTest extends \PHPUnit_Framework_TestCase
+abstract class StatemachineInterfaceTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @return \MetaborStd\Statemachine\StatemachineInterface
@@ -17,7 +17,7 @@ abstract class StatemachineInterfaceTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testProvidesCurrentState()
+    public function testProvidesCurrentState(): void
     {
         $instance = $this->createTestInstance();
         $currentState = $instance->getCurrentState();
@@ -27,11 +27,11 @@ abstract class StatemachineInterfaceTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testProvidesStatefulSubject()
+    public function testProvidesStatefulSubject(): void
     {
         $instance = $this->createTestInstance();
         $subject = $instance->getSubject();
-        $this->assertInternalType('object', $subject);
+        $this->assertIsObject($subject);
     }
 
     /**
@@ -59,7 +59,7 @@ abstract class StatemachineInterfaceTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testHandleEventsThatAreTriggered()
+    public function testHandleEventsThatAreTriggered(): void
     {
         $instance = $this->getTestInstanceForTriggerTest();
         $testTransition = $this->getTransitionForTriggerTest();
@@ -83,7 +83,7 @@ abstract class StatemachineInterfaceTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testChecksIfConditionsAreTrue()
+    public function testChecksIfConditionsAreTrue(): void
     {
         $instance = $this->getTestInstanceForCheckTest();
         $testTransition = $this->getTransitionForCheckTest();

@@ -10,24 +10,24 @@ interface NamedCollectionInterface extends \Traversable
     /**
      * @param NamedInterface $object
      */
-    public function add(NamedInterface $object);
+    public function add(NamedInterface $object): void;
 
     /**
      * @param string $name
      *
      * @return bool
      */
-    public function has($name);
+    public function has(string $name): bool;
 
     /**
      * @param string $name
      *
      * @return NamedInterface
      */
-    public function get($name);
+    public function get(string $name): NamedInterface;
 
     /**
      * @return array
      */
-    public function getNames();
+    public function getNames(): array;
 }

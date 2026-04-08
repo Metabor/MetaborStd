@@ -14,10 +14,10 @@ interface DispatcherInterface extends CallbackInterface
      * @param array             $arguments
      * @param CallbackInterface $onReadyCallback
      */
-    public function dispatch(EventInterface $event, array $arguments = array(), CallbackInterface $onReadyCallback = null);
+    public function dispatch(EventInterface $event, array $arguments = [], ?CallbackInterface $onReadyCallback = null): void;
 
     /**
      * @return bool
      */
-    public function isReady();
+    public function isReady(): bool;
 }

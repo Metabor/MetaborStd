@@ -15,5 +15,5 @@ interface ConditionInterface extends NamedInterface
      *
      * @return bool
      */
-    public function checkCondition($subject, \ArrayAccess $context);
+    public function checkCondition(object $subject, \ArrayAccess $context): bool;
 }

@@ -8,7 +8,7 @@ namespace MetaborStd;
 interface WeightedInterface
 {
     /**
-     * @return double
+     * @return float
      */
-    public function getWeight();
+    public function getWeight(): float;
 }

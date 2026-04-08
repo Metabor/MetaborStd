@@ -9,5 +9,5 @@ interface CallbackInterface
 {
     /**
      */
-    public function __invoke();
+    public function __invoke(): mixed;
 }

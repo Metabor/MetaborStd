@@ -13,24 +13,24 @@ interface StateInterface extends NamedInterface
     /**
      * @return \Traversable|array
      */
-    public function getEventNames();
+    public function getEventNames(): \Traversable|array;
 
     /**
      * @param string $name
      *
      * @return EventInterface
      */
-    public function getEvent($name);
+    public function getEvent(string $name): EventInterface;
 
     /**
      * @param string $name
      *
      * @return bool
      */
-    public function hasEvent($name);
+    public function hasEvent(string $name): bool;
 
     /**
      * @return \Traversable
      */
-    public function getTransitions();
+    public function getTransitions(): \Traversable;
 }

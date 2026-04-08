@@ -5,7 +5,7 @@ namespace MetaborStd\Statemachine;
 /**
  * @author Oliver Tischlinger
  */
-abstract class StateCollectionInterfaceTest extends \PHPUnit_Framework_TestCase
+abstract class StateCollectionInterfaceTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @return \MetaborStd\Statemachine\StateCollectionInterface
@@ -20,7 +20,7 @@ abstract class StateCollectionInterfaceTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testContainsStates()
+    public function testContainsStates(): void
     {
         $instance = $this->createTestInstance();
         $states = $instance->getStates();
@@ -31,7 +31,7 @@ abstract class StateCollectionInterfaceTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testCanReplyIfItContainsAStateByName()
+    public function testCanReplyIfItContainsAStateByName(): void
     {
         $instance = $this->createTestInstance();
         $name = $this->getOneStateNameOfTheCollection();
@@ -42,7 +42,7 @@ abstract class StateCollectionInterfaceTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testReturnsAStateByName()
+    public function testReturnsAStateByName(): void
     {
         $instance = $this->createTestInstance();
         $name = $this->getOneStateNameOfTheCollection();

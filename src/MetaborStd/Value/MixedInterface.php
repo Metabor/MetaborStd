@@ -10,5 +10,5 @@ interface MixedInterface
     /**
      * @return mixed
      */
-    public function getValue();
+    public function getValue(): mixed;
 }

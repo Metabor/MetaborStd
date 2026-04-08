@@ -8,7 +8,7 @@ namespace MetaborStd;
 interface TimeBasedInterface
 {
     /**
-     * @return \DateTime
+     * @return \DateTimeInterface
      */
-    public function getDate();
+    public function getDate(): \DateTimeInterface;
 }

@@ -10,10 +10,10 @@
         }
     ],
     "require": {
-        "php": ">=5.3"
+        "php": ">=8.2"
     },
     "require-dev": {
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "^11.0"
     },
     "suggest": {
         "metabor/statemachine": "Working implementation of the statemachine interfaces"
@@ -27,7 +27,8 @@
     "minimum-stability":"dev",
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0.x-dev"
+            "dev-master": "3.0.x-dev",
+            "dev-3.0.x-dev": "3.0.x-dev"
         }
     }
 }

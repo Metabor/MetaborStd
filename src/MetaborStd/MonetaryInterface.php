@@ -10,10 +10,10 @@ interface MonetaryInterface
     /**
      * @return string
      */
-    public function getCurrency();
+    public function getCurrency(): string;
 
     /**
-     * @return number
+     * @return int|float
      */
-    public function getAmount();
+    public function getAmount(): int|float;
 }

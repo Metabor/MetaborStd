@@ -12,5 +12,5 @@ interface StateNameDetectorInterface
      *
      * @return string
      */
-    public function detectCurrentStateName($subject);
+    public function detectCurrentStateName(object $subject): ?string;
 }

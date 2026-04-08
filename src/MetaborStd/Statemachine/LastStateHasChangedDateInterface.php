@@ -8,7 +8,7 @@ namespace MetaborStd\Statemachine;
 interface LastStateHasChangedDateInterface
 {
     /**
-     * @return \DateTime
+     * @return \DateTimeInterface
      */
-    public function getLastStateHasChangedDate();
+    public function getLastStateHasChangedDate(): \DateTimeInterface;
 }

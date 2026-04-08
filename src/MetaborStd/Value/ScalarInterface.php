@@ -10,5 +10,5 @@ interface ScalarInterface extends MixedInterface
     /**
      * @return bool|float|int|null|string
      */
-    public function getValue();
+    public function getValue(): bool|float|int|string|null;
 }
