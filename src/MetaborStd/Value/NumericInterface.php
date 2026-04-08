@@ -10,5 +10,5 @@ interface NumericInterface extends ScalarInterface
     /**
      * @return int|float
      */
-    public function getValue();
+    public function getValue(): int|float;
 }

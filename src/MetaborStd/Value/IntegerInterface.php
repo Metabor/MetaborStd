@@ -10,5 +10,5 @@ interface IntegerInterface extends NumericInterface
     /**
      * @return int
      */
-    public function getValue();
+    public function getValue(): int;
 }

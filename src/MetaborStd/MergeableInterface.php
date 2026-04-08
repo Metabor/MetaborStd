@@ -10,5 +10,5 @@ interface MergeableInterface
     /**
      * @param mixed $source
      */
-    public function merge($source);
+    public function merge(mixed $source): void;
 }

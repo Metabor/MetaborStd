@@ -12,5 +12,5 @@ interface StringConverterInterface
      *
      * @return string
      */
-    public function convertToString($source);
+    public function convertToString(mixed $source): string;
 }

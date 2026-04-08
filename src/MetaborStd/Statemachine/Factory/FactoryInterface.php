@@ -12,5 +12,5 @@ interface FactoryInterface
      *
      * @return \MetaborStd\Statemachine\StatemachineInterface
      */
-    public function createStatemachine($subject);
+    public function createStatemachine(object $subject): \MetaborStd\Statemachine\StatemachineInterface;
 }

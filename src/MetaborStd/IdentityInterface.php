@@ -10,5 +10,5 @@ interface IdentityInterface
     /**
      * @return string
      */
-    public function getUniqueIdentifier();
+    public function getUniqueIdentifier(): string;
 }

@@ -8,8 +8,8 @@ namespace MetaborStd\Semaphore;
 interface MutexFactoryInterface
 {
     /**
-     * @param $subject
+     * @param mixed $subject
      * @return MutexInterface
      */
-    public function createMutex($subject);
+    public function createMutex(mixed $subject): MutexInterface;
 }

@@ -10,20 +10,20 @@ interface MutexInterface
     /**
      * @return bool
      */
-    public function acquireLock();
+    public function acquireLock(): bool;
 
     /**
      * @return bool
      */
-    public function releaseLock();
+    public function releaseLock(): bool;
 
     /**
      * @return bool
      */
-    public function isLocked();
+    public function isLocked(): bool;
 
     /**
      * @return bool
      */
-    public function isAcquired();
+    public function isAcquired(): bool;
 }

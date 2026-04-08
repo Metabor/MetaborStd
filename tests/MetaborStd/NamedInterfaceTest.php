@@ -5,7 +5,7 @@ namespace MetaborStd;
 /**
  * NamedInterface test case.
  */
-abstract class NamedInterfaceTest extends \PHPUnit_Framework_TestCase
+abstract class NamedInterfaceTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @return \MetaborStd\NamedInterface
@@ -15,11 +15,11 @@ abstract class NamedInterfaceTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testHasAName()
+    public function testHasAName(): void
     {
         $instance = $this->createTestInstance();
         $name = $instance->getName();
-        $this->assertInternalType('string', $name);
+        $this->assertIsString($name);
         $this->assertNotEmpty($name);
     }
 }

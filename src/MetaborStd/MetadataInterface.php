@@ -10,5 +10,5 @@ interface MetadataInterface
     /**
      * @return array
      */
-    public function getMetadata();
+    public function getMetadata(): array;
 }

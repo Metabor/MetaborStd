@@ -12,5 +12,5 @@ interface TransitionSelectorInterface
      *
      * @return \MetaborStd\Statemachine\TransitionInterface|null
      */
-    public function selectTransition(\Traversable $transitions);
+    public function selectTransition(\Traversable $transitions): ?\MetaborStd\Statemachine\TransitionInterface;
 }

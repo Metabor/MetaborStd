@@ -5,7 +5,7 @@ namespace MetaborStd\Statemachine\Factory;
 /**
  * @author Oliver Tischlinger
  */
-abstract class FactoryInterfaceTest extends \PHPUnit_Framework_TestCase
+abstract class FactoryInterfaceTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @return \MetaborStd\Statemachine\Factory\FactoryInterface
@@ -20,7 +20,7 @@ abstract class FactoryInterfaceTest extends \PHPUnit_Framework_TestCase
     /**
      *
      */
-    public function testCreatesAStatemachineInstanceForTheSubject()
+    public function testCreatesAStatemachineInstanceForTheSubject(): void
     {
         $instance = $this->createTestInstance();
         $subject = $this->getSubject();

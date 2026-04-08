@@ -10,5 +10,5 @@ interface NamedInterface
     /**
      * @return string
      */
-    public function getName();
+    public function getName(): string;
 }

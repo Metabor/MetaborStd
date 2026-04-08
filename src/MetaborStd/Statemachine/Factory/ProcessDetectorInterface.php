@@ -12,5 +12,5 @@ interface ProcessDetectorInterface
      *
      * @return \MetaborStd\Statemachine\ProcessInterface
      */
-    public function detectProcess($subject);
+    public function detectProcess(object $subject): \MetaborStd\Statemachine\ProcessInterface;
 }
